@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <title>Task</title>
+
+</head>
+<body>
+    <header>
+        <div class="logo" id="homesection">RABS
+            <a href="" class="logo-s">Net </a>
+        </div>
+            <input type="checkbox" name="" id="check" style="display: none;">
+            <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+            <ul class="sign">
+                <li><a href="#homesection">home</a></li>
+                <li><a href="#aboutussection">about us</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">whatsapp</a></li>
+            </ul>   
+    </header>
+    <div class="slider">
+        <div class="myslider fade" style="display: block;">
+            <div class="txt">
+                <h1>Website Creator</h1>
+                <p>Web developer</p>
+                <p class="textp">A web developer is a programmer or a coder who develops World Wide Web applications using a client–server model.</p>
+
+            </div>
+            <img src="./images/img4.jpg" alt="" style="width: 100%;height: 100%; opacity: 2.8;" class="imgan">
+        </div>
+        <div class="myslider fade" style="display: block;">
+            <div class="txt">
+                <h1>web Hosting</h1>
+                <p>Hosting</p>
+                <p class="textp">web hosting provider stores and maintains website files and applications on a server to make its customers' websites accessible on the internet.</p>
+
+            </div>
+            <img src="./images/img2.jpg" alt="" style="width: 100%;height: 100%; opacity: 0.8;"class="imgan">
+        </div>        <div class="myslider fade">
+            <div class="txt">
+                <h1>Android Application</h1>
+                <p>Android developer</p>
+            </div>
+            <img src="./images/img3.jpg" alt="" style="width: 100%;height: 100%;">
+        </div>
+        <div class="myslider fade" style="display: block;">
+            <div class="txt">
+                <h1>SocialMedia Marketing</h1>
+                <p>Market developer</p>
+            </div>
+            <img src="./images/img1.jpg" alt="" style="width: 100%;height: 100%; opacity: 0.8;"class="imgan">
+        </div>
+        <div class="myslider fade" style="display: block;">
+            <div class="txt">
+                <h1>Backend Development</h1>
+                <p>Backend developer</p>
+            </div>
+            <img src="./images/img5.jpg" alt="" style="width: 100%;height: 100%; opacity: 1.8;"class="imgan">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i></a>
+        <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+
+        <div class="dotsbox" style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <h1 class="vendersheading"><span>Our</span> Partners</h1>
+    <div class="venderslist" id="">
+        <img src="./images/g1.png"  class="imgvendors">
+        <img src="./images/rabs-logo.png" class="imgvendors" >
+        <img src="./images/tg2.jpg" class="imgvendors">
+        <img src="./images/gp3.jpg" class="imgvendors">
+        <img src="./images/th (9).jpg" class="imgvendors">
+
+    </div>
+    <section class="section" id="aboutussection">
+        <video class="video-slider" src="/images/v1.mp4" autoplay muted loop></video>
+        
+        <div class="content">
+            <h1>Welcome to  <span>RABS Net Solutions</span> Pvt. Ltd</h1>
+            <p class="para">We create impactful digital customer experiences</p>
+            <p class="para">A digital-first integrated business promotion company.</p> 
+            <p class="para">Reach, Engage, Acquire & Convert customers through digital conversations.</p>
+            <button id="button">PopUp And whatsapp integration</button>
+            <div class="popup" >
+                <div class="popcontent" >
+                    <h1 style="color: red;">Feedback Form</h1>
+                    <span class="close"><i class="fa-sharp fa-solid fa-circle-xmark"></i></span>
+                    <form action="">
+                        <input type="text" id="name" placeholder="Enter name"><br>
+                        <input type="number" id="number" placeholder="Enter Phone number"><br>
+                        <input type="email" id="email" placeholder="Enter email"><br>
+                        <textarea id="message" cols="20" rows="5"></textarea><br>
+                        <button type="submit" id="btn1" onclick="Whatsapp()"><i class="fa-brands fa-whatsapp" style="background: #25D366;border-radius: 10px ;margin-right: 4px;"></i>Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="fabs" onclick="toggleBtn()">
+        <div class="action">
+            <i class="fas fa-plus" id="add"></i>
+            <i class="fas fa-times" id="remove" style="display: none;"></i>
+        </div>
+        <div class="btns">
+                <a href="#" class="btn-float" style="background: #3b5999;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn-float" style="background: #E4405F;">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="btn-float" style="background: #3b5999;">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn-float" style="background: #25D366;" >
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="btn-float" style="background: #0A66C2;">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="btn-float" style="background: #171515;">
+                    <i class="fa-brands fa-github"></i>   
+                </a>
+        </div>
+    </div>
+    <script src="/Task.js"></script>
+
+    
+</body>
+
+</html>
+
